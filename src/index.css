@@ -1,13 +1,77 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+* {
+  margin: 40;
+  padding: 20;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-body {
+  text-align: center;
+}
+
+header {
+  background-color: #142594;
+  padding: 20px;
+}
+
+.book-list {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ 
+  padding: 3rem;
+  gap: 2rem;
+}
+
+@media all and (max-width:767px) {
+  .book-list {
+    grid-template-columns: repeat(3, 1fr);
+   
+    padding: 3rem;
+  }
+  .book-list {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 3rem;
+      margin-top: 50px;
+  }
+
+}
+.book {
+  background-color: #fff;
+  object-fit: cover;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+}
+
+.book img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+footer a:hover {
+  color: #f00;
 }
