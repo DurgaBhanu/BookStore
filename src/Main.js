@@ -1,12 +1,7 @@
-import {books} from "./BookData"
-
-const Main = ()=>{
-   
-    
+const Main = ({books})=>{
     return(
-        <div>
-            
-
+        <div >
+          {books.length ?  
           <article className="book-list">
             {books.map((book)=>{
                 return(
@@ -16,7 +11,11 @@ const Main = ()=>{
                     </div>
                 )
             })}
-        </article>
+        </article> 
+        : 
+            <p>No books found with that Title</p>
+       } 
+
         </div>
     )
 }

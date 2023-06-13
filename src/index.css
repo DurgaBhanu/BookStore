@@ -1,40 +1,51 @@
-
 * {
-  margin: 40;
-  padding: 20;
   box-sizing: border-box;
 }
 
 .main-body {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
 }
 
-header {
-  background-color: #142594;
-  padding: 20px;
+ p{
+  text-align: center;
+  font-size : 80px;
+  font-weight: bold;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 80px;
+  
 }
 
 .book-list {
-  width: 90vw;
+  width: 80vw;
   max-width: 1170px;
-  margin: 5rem auto;
+  margin: 5rem 5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
- 
-  padding: 3rem;
+  padding: 2rem;
   gap: 2rem;
+
 }
 
 @media all and (max-width:767px) {
   .book-list {
-    grid-template-columns: repeat(3, 1fr);
-   
+    grid-template-columns: repeat(3, 1fr); 
     padding: 3rem;
+    display: flex;
+    margin-left: 5px;
   }
   .book-list {
       grid-template-columns: repeat(1, 1fr);
       padding: 3rem;
-      margin-top: 50px;
+      margin-top: 10px;
+      display: flex;
+      
   }
 
 }
@@ -51,27 +62,73 @@ header {
 .book img {
   width: 100%;
   object-fit: cover;
+  transition: color 0.3s ease-in-out;
 }
 
+.book:hover, .book:active{
+  background-color: grey;
+  
+}
 
-footer {
+.footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
+  margin-top: auto;
 }
 
-footer p {
-  margin-bottom: 10px;
+.search input{
+  width: 60%;
+  padding: 5px 5px;
+  margin: 20px 300px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  justify-content: center;
+  height: 50px;
 }
 
-footer a {
-  color: #fff;
-  text-decoration: none;
+.container button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 10px;
+  margin: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  margin-left: 10px;
+  vertical-align: baseline;
+}
+
+
+.category {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  width: 8%;
+  font-weight: 500;
+  color: black;
+}
+
+.category h2{
+  color : black;
   font-weight: bold;
-  transition: color 0.3s ease-in-out;
+  font-size: 30px;
 }
 
-footer a:hover {
-  color: #f00;
+.category label{
+  font-size: 20px;
+}
+
+.horizontal{
+  display: flex;
+  margin-left: 200px;
 }
