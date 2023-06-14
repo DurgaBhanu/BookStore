@@ -1,15 +1,16 @@
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  
 }
-
-.main-body {
-  text-align: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body {
   background-color: lightblue;
 }
+.main-body {
+  text-align: center;
 
+}
  p{
   text-align: center;
   font-size : 80px;
@@ -25,7 +26,6 @@
 .book-list {
   width: 80vw;
   max-width: 1170px;
-  margin: 5rem 5px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 2rem;
@@ -33,22 +33,49 @@
 
 }
 
+.search input{
+  width: 60%;
+  padding: 5px 5px;
+  margin: 20px 300px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  justify-content: center;
+  height: 50px;
+}
 @media all and (max-width:767px) {
   .book-list {
     grid-template-columns: repeat(3, 1fr); 
     padding: 3rem;
-    display: flex;
-    margin-left: 5px;
+   
+    
   }
   .book-list {
       grid-template-columns: repeat(1, 1fr);
       padding: 3rem;
-      margin-top: 10px;
-      display: flex;
-      
+      margin-top: 10px; 
+    }
+  .header {
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+  .search input{
+    display: flex;
+    margin: auto;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  
 }
+
+
 .book {
   background-color: #fff;
   object-fit: cover;
@@ -75,22 +102,12 @@
   color: #fff;
   padding: 20px;
   text-align: center;
-  margin-top: auto;
-}
-
-.search input{
-  width: 60%;
-  padding: 5px 5px;
-  margin: 20px 300px;
-  display: flex;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  justify-content: center;
-  height: 50px;
+  width: 100%;
+  
 }
 
 .container button {
-  width: 100%;
+  width: max-content;
   background-color: #4CAF50;
   color: white;
   padding: 14px 10px;
@@ -101,18 +118,14 @@
 }
 
 .container{
-  display: flex;
-  flex-direction: row;
-  font-weight: 500;
-  margin-left: 10px;
-  vertical-align: baseline;
+  display: flex; 
+  justify-content: flex-start;
 }
-
 
 .category {
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
+  margin : 10px 50px;
   width: 8%;
   font-weight: 500;
   color: black;
@@ -124,11 +137,10 @@
   font-size: 30px;
 }
 
+.category label,input{
+  display: flex;
+  margin-left: 10px;
+}
 .category label{
   font-size: 20px;
-}
-
-.horizontal{
-  display: flex;
-  margin-left: 200px;
 }

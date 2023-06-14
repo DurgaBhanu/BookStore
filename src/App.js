@@ -9,6 +9,7 @@ import Category from "./Category";
 
 function App() {
   const [search,setSearch] = useState("")
+  // eslint-disable-next-line
   const [Books,setBooks] = useState(books)
   const [category,setCategory] = useState("")
 
@@ -19,8 +20,7 @@ function App() {
       <Search  search = {search} setSearch={setSearch}/>
       <div className="container">
         <Category category= {category} setCategory = {setCategory} />
-        <div className="horizontal">
-            
+        <div>   
           {category ? 
             <Main 
               books ={Books.filter(Book => ((Book.category).toLowerCase()).includes(category.toLowerCase()))}
@@ -30,10 +30,12 @@ function App() {
           />
           }
           </div>
+         
         </div> 
+        <Footer />
        
 
-      <Footer />
+      
       
     </div>
   );

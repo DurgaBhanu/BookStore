@@ -11,7 +11,7 @@ const Category = ({category, setCategory})=>{
          onChange={(e)=>setCategory("Biography")}
           />
         Biography
-        </label><br />
+        </label>
         <label>
         <input 
          type = "radio" 
@@ -22,7 +22,7 @@ const Category = ({category, setCategory})=>{
          />
 
         Adventure
-        </label><br />
+        </label>
         <label>
         <input
          type = "radio" 
