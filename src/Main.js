@@ -1,6 +1,6 @@
 const Main = ({books})=>{
     return(
-        <div >
+        <div className="nav" >
           {books.length ?  
           <article className="book-list">
             {books.map((book)=>{
