@@ -43,8 +43,10 @@ To get a local copy of the project up and running on your machine, follow the in
     npm start
     
  2. Open a web browser and navigate to http://localhost:3000 to view the application .
+
+    
+    
+    ![Screenshot from 2023-08-09 14-18-23](https://github.com/DurgaBhanu/Bookstore/assets/38009640/829b55ea-6b3c-485b-8dfb-cbf9decbaa03)
+
     
 
-
- 
- ![Bookstore](https://github.com/DurgaBhanu/Bookstore/blob/main/public/BookStore.png?raw=true)
