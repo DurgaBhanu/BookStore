@@ -4,7 +4,7 @@ Welcome to the React Book Store repository! This project is a web application bu
 
 ## Demo
 
-You can explore the live demo of the React Book Store application [here]([https://durgabhanu.github.io/Bookstore/](https://bookstore-neon-two.vercel.app/)).
+You can explore the live demo of the React Book Store application [here](https://bookstore-neon-two.vercel.app/).
 
 ## Features
 
