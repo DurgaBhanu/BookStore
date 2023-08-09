@@ -30,18 +30,21 @@ To get a local copy of the project up and running on your machine, follow the in
 2. Navigate to the project directory:
 
    cd Bookstore
-
-3.Install the project dependencies:
+   
+3. Install the project dependencies:
 
    npm install
+   
 
-**###Running the Application**
+### Running the Application
 
  1. Start the development server:
     
     npm start
     
- 2.Open a web browser and navigate to http://localhost:3000 to view the application.
+ 2. Open a web browser and navigate to http://localhost:3000 to view the application .
+    
+
 
  
- ![Bookstore](https://github.com/DurgaBhanu/Bookstore/blob/main/public/BookStore.png)
+ ![Bookstore](https://github.com/DurgaBhanu/Bookstore/blob/main/public/BookStore.png?raw=true)
